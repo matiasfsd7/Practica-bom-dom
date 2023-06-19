@@ -11,8 +11,8 @@ function aleatoreoNum() {
 }
 aleatoreoNum();
 
-const buttonId2 = document.getElementById("button2");
-const number = document.getElementById("number");
+const buttonId2 = document.getElementById("buttonId2");
+const input = document.getElementById("input");
 
 // function aleatoreoNum(min, max) {
 //   min = Math.ceil(min);
