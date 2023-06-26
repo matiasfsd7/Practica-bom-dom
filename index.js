@@ -1,23 +1,28 @@
-let min = 1;
-let max = 100;
+const buttoncomenzarJuego = document.getElementById("buttoncomenzarJuego");
+buttoncomenzarJuego.addEventListener("click", () => {
+  buttoncomenzarJuego.innerHTML = "El juego comenzo 👀🤔 ";
+  buttoncomenzarJuego.disabled = true;
 
-const buttonId1 = document.getElementById("buttonId1");
-buttonId1.addEventListener("click", () => {
-  aleatoreoNum();
-});
-function aleatoreoNum() {
-  let num = Math.floor(Math.random() * 101);
+  num = aleatoreoNum(1, 100);
   console.log(num);
+});
+function aleatoreoNum(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
-aleatoreoNum();
+// let num = Math.floor(Math.random() * 101);
 
-const buttonId2 = document.getElementById("buttonId2");
-const input = document.getElementById("input");
+let buttonEnviar = document.getElementById("buttonEnviar");
 
-// function aleatoreoNum(min, max) {
-//   min = Math.ceil(min);
-//   max = Math.floor(max);
-//   return Math.floor(Math.random() * (max - min + 1) + min);
+let input = document.querySelector("input");
+
+// function adivinaNumero() {
+//   if (input == num) {
+//     alert("ADIVINASTE!");
+//   }
+//   if (input > num) {
+//     alert(" El numero es menor");
+//   } else input < num;
+//   alert("El numero es mayor");
 // }
-// console.log(aleatoreoNum(1, 100));
-// aleatoreoNum();
