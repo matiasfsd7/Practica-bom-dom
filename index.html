@@ -23,21 +23,28 @@
     >
       ¡Comenzar Juego!
     </button>
-    <input
-      type="number"
-      id="input"
-      placeholder="Ingrese un numero"
-      class="container d-flex flex-center m-5 p-2"
-    />
-    <button
-      id="buttonEnviar"
-      class="btn btn-success mx-auto d-block p-4 m-5"
-      type="submit"
-    >
-      Enviar
-    </button>
+     <form
+     class="my-5 bg-light p-4 rounded"
+          id="formuJuego"
+          onsubmit="consultarNumero(event)"
+        >
+    <div>
+      <input
+        type="number"
+        id="input"
+        placeholder="Ingrese un numero"
+        class="container d-flex flex-center m-5 p-2"
+      />
+      <button
+        id="buttonEnviar"
+        class="btn btn-success mx-auto d-block p-4 m-5"
+        type="submit"
+      >
+        Enviar
+      </button>
+    </div>
   </div>
-
+</form>
   <body>
     <script src="./index.js"></script>
     <script
